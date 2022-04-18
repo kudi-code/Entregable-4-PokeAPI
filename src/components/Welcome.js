@@ -19,7 +19,7 @@ const Welcome = () => {
             type: "GET_USERNAME", //Manda a ejecutar la función
             payload: userName//Permite mandar valores
         })
-        navigate("/pokemons")
+        navigate("/pokedex")
     }
     return (
         <div id='welcome'>

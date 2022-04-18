@@ -13,7 +13,7 @@ const PokemonCard = ({url}) => {
     },[url])
     return (
         <div className={ pokeData?.types?.[0].type.name +' pokeCard'}>
-            <Link to={`/pokemon/${pokeData.id}`}><h3>{pokeData.name}</h3>  </Link> 
+            <Link to={`/pokedex/${pokeData.id}`}><h3>{pokeData.name}</h3>  </Link> 
             <p># {pokeData.id}</p>
             <img className='sprite' src={pokeData?.sprites?.front_default} alt="" srcSet="" />
 

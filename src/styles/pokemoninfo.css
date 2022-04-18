@@ -1,0 +1,87 @@
+.App{
+    margin-bottom: -100px;
+}
+#pokemoninfo div{
+    background-color: white;
+    color: black;
+    margin: 50px auto;
+    width: 600px;
+    border-radius: 20px;
+}
+
+#pokemoninfo{
+    /* background-color: rgb(51, 115, 167); */
+    color: white;
+    margin: 0;
+    padding: 50px;
+}
+#pokemoninfo .main {
+    margin: 0 auto;
+    position: relative;
+    right: 250px;
+}
+#pokemoninfo .sprite{
+    width: 300px;
+}
+#pokemoninfo .types{
+    
+    
+    position: relative;
+    right: 250px;
+}
+#pokemoninfo .types button{
+    width: 150px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px auto;
+    color: white;
+    
+}
+#pokemoninfo .abilities{    
+    position: relative;
+    right: 250px;
+}
+#pokemoninfo .abilities button{
+    width: 150px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px auto;
+    color: black
+}
+
+#pokemoninfo .moves{
+    padding: 25px;
+    position: relative;
+    top: -700px;
+    left: 25vw;
+    margin-bottom: -700px;
+    width: 450px;
+   
+}
+#pokemoninfo .moves .move-list{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: 50px 50px 50px;
+    /* 3 columnas de 100px c/u */
+    /* y 3 filas de 100px c/u */
+
+    gap: .5rem;
+    /* Se aplica un padding entre los elementos */
+
+    grid-auto-rows: 50px;
+}
+
+#pokemoninfo .moves .move-list .move{
+    padding: 10px 2px ;
+    border: 1px solid rgb(145, 145, 145);
+    border-radius: 8px;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+

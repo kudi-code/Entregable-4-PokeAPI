@@ -12,10 +12,10 @@ const Pokemons = () => {
     const [pokemonData, setPokemonData] = useState([])
     const [pokeName, setPokeName]= useState("")
     const [types, setTypes] = useState([])
-    const [type, setType] = useState("")
+    // const [type, setType] = useState("")
     
     const [currentPoke, setCurrentPoke] = useState([])
-    const [loading, setLoading] = useState(false)
+    // const [loading, setLoading] = useState(false)
     const [currentPage, setCurrentPage] = useState(1)
     const [pokePerPage, setPokePerPage] = useState(20)
 
@@ -26,6 +26,7 @@ const Pokemons = () => {
         const indexOfLastPoke = currentPage * pokePerPage
         const indexOfFirstPost = indexOfLastPoke -pokePerPage
         setCurrentPoke(pokemonData.slice(indexOfFirstPost, indexOfLastPoke))
+        setPokePerPage(20) //Valor por defecto de los pokes por hoja
     },[pokemonData, currentPage, pokePerPage])
 
     //Change page
@@ -61,7 +62,7 @@ const Pokemons = () => {
 
     const Submit = (e) => {
         e.preventDefault();
-        navigate(`/pokemon/${pokeName}`)
+        navigate(`/pokedex/${pokeName}`)
     }
 
     const handleId = (e) => {      
